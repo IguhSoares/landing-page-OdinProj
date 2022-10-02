@@ -22,6 +22,6 @@ const imgGallery = document.querySelectorAll('.image-wrapper');
 imgGallery.forEach(el => galleryObserver.observe(el));
 galleryObserver.observe(document.querySelector('#content h2'));
 
-['#quote', '#cta', 'footer'].forEach(el => {
+['.quote-text', '.quote-author', '#cta', 'footer'].forEach(el => {
   fadeInObserver.observe(document.querySelector(el));
 });
