@@ -2,7 +2,7 @@
  * Triggers animations on scroll
  * by observing if the element is intersecting the view port.
  */
-const observer = new IntersectionObserver(entries => {
+const galleryObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('initGallery');
@@ -10,5 +10,18 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
+const fadeInObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fadeIn');
+    }
+  });
+});
+
 const imgGallery = document.querySelectorAll('.image-wrapper');
-imgGallery.forEach(el => observer.observe(el));
+imgGallery.forEach(el => galleryObserver.observe(el));
+galleryObserver.observe(document.querySelector('#content h2'));
+
+['#quote', '#cta', 'footer'].forEach(el => {
+  fadeInObserver.observe(document.querySelector(el));
+});
