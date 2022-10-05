@@ -6,7 +6,11 @@ This is a lesson from the Foundations Course of [The Odin Project](http://theodi
 
 # Overview
 
-For this project, a [layout]("https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png") was given to be implemented using HTML + CSS. The main goal was to practice Flexbox layout and other basic concepts.
+For this project, a [layout](#given-layout) was given to be implemented using HTML + CSS. The main goal was to practice Flexbox layout and other basic concepts.
+
+##### Given layout:
+
+![Layout](https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png)
 
 # Features
 
